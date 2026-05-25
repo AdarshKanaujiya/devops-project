@@ -1,0 +1,14 @@
+name: ci workflow
+
+# this workflow will run on push event
+on: [push] 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Build success
+        run: echo "website build succesful"
